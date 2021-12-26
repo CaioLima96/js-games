@@ -1,4 +1,6 @@
 const dino = document.getElementById('dino')
+const cactus = document.getElementById('cactus')
+
 
 function jump(){
 
@@ -12,11 +14,19 @@ function jump(){
 }
 
 let isAlive = setInterval(function(){
-    
 
-    let dinoTop = window.getComputedStyle(dino).getPropertyValue("top")
-    console.log("check")
+    //pega a posição atual do dino no eixo Y
+    let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"))
     
+    //pega posição atual do cacto no eixo X
+    let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"))
+    
+    //dectar colisão
+    if(cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 150){
+        alert("GameOver")
+    }
+
+
 }, 10)
 
 document.addEventListener("keydown", (event) => {
