@@ -7,7 +7,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-html, body, #root, .App {
+html, body, #root{
     width: 100%;
     height: 100%;
 }
@@ -16,7 +16,7 @@ html, body, #root, .App {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 50px 1fr 30px;
-    gap: 5px;
+    gap: 15px;
 }
 
 header, #content, footer {
