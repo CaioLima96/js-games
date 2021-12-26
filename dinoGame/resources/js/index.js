@@ -24,6 +24,7 @@ let isAlive = setInterval(function(){
     //dectar colisão
     if(cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 150){
         alert("GameOver")
+        console.log("gameover")
     }
 
 
