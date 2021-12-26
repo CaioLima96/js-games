@@ -13,6 +13,7 @@
     height: 200px;
     border: 1px solid black;
     margin: 20px auto;
+    overflow: hidden;
 }
 
 #dino{
@@ -35,10 +36,10 @@
         top: 150px
     }
     30%{
-        top: 130px;
+        top: 100px;
     }
     50%{
-        top: 80px;
+        top: 70px;
     }
     80%{
         top:130px;
@@ -57,5 +58,15 @@
 
     background-image: url(../../assets/img/cactus.png);
     background-size: 20px 40px;
+
+    animation: block 1s infinite linear;
 }
 
+@keyframes block{
+    0%{
+        left: 580px
+    }
+    100%{
+        left: -25px
+    }
+}
