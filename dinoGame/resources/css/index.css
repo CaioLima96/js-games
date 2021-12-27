@@ -12,12 +12,11 @@
 
 header nav {
     display: flex;
-    justify-content: end;
+    /* justify-content: end; */
 }
 
 header nav a {
- 
-    margin: 5px 10px 0 0;
+    margin: 5px 0 0 10px;
 }
 
 h1 {
@@ -92,4 +91,8 @@ h1 {
     100%{
         left: -25px
     }
+}
+
+#score{
+    text-align: center;
 }
