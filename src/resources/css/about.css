@@ -24,6 +24,7 @@ h1 img {
 #content div a {
     text-decoration: none;
     color: black;
+    font-weight: bold;
 }
 
 #content div a:hover {
