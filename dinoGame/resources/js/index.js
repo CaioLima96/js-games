@@ -26,3 +26,8 @@ document.addEventListener("keydown", (event) => {
     jump()
     dinoScore()
 })
+
+function dinoJump() {
+    jump()
+    dinoScore() 
+}
