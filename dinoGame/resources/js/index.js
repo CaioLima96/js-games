@@ -15,7 +15,7 @@ let isAlive = setInterval(function(){
     if(cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 150){
 
         //alert("GameOver")
-        document.getElementById('score').innerHTML = `Pontuação: ${finalScore = 0}`
+        document.getElementById('score').innerHTML = `<p>Pontuação: ${finalScore = 0}</p>`
         
         console.log("gameover")
     }

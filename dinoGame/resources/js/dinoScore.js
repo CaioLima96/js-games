@@ -7,9 +7,9 @@ function dinoScore(){
 
     // if(dinoTopp > cactusLeftt){
     //     console.log(finalScore)
-    //     return document.getElementById('score').innerHTML = `Pontuação: ${finalScore += 1}` 
+    //     return document.getElementById('score').innerHTML = `<p>Pontuação: ${finalScore += 1}</p>` 
     // }
 
-    document.getElementById('score').innerHTML = `Pontuação: ${finalScore += 1}`
+    document.getElementById('score').innerHTML = `<p>Pontuação: ${finalScore += 1}</p>`
     console.log(finalScore)
 }

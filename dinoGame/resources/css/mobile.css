@@ -1,10 +1,12 @@
+@media (max-width: 416px) {
+    #score p {
+        font-size: 0.875rem;
+    }
+}
+
 @media (max-width: 1026px){
 
-    header {
-        display: none;
-    }
-
-    #trophy {
+    header, #manual, #trophy {
         display: none;
     }
 
@@ -14,18 +16,14 @@
 
     /* ====== GRID CSS ====== */
 
-    .game{
+    .game, #pixelStar, #score {
         grid-column: 2/12;
         grid-row: 2/2;
     }
 
-    #pixelStar {
+    /* #pixelStar {
         grid-column: 2/12;
         grid-row: 2/2;
-    }
-
-    #pixelStar ul li:not(li:last-child) {
-        margin-right: 0.438rem;
     }
 
     #score {
@@ -33,6 +31,11 @@
         grid-column: 10/12;
         margin: 0.625rem 0.5rem 0 0;
         width: 80px;
+    } */
+
+    #mobControl {
+        grid-column: 2/12;
+        grid-row: 5/5;
     }
 
 
@@ -44,21 +47,19 @@
     }
 
     #pixelStar {
-        margin: 0.375rem 0 0 0.375rem;
-
         max-width: 650px;
         width: 100%;
-        height: 28px;
-        border: 1px solid red;
+
+        /* border: 1px solid red; */
         margin: 0 auto;
-        overflow: hidden;
     }
 
     #pixelStar ul{
         display: flex;
         flex-wrap: wrap;
-        width: 100%;
-        margin: 0 auto;
+
+        width: 100%;    
+        margin: 0.188rem 0 0 0.188rem;
         list-style: none;
     }
 
@@ -84,22 +85,34 @@
         opacity: 0.2;
     }
 
-    #manual {
-        grid-row: 5/5;
+    #pixelStar ul li:hover img {
+        filter: none;
+        opacity: 1;
     }
-    
-    #manual{
-        display: none;
+
+    #score {
+        display: flex;
+        justify-content: flex-end;
+
+        max-width: 650px;
+        width: 100%;
+        height: 50px;
+
+        /* border: 1px solid red; */
+        margin: 0 auto;
+    }
+
+    #score p {
+        margin: 0.188rem 0.188rem 0 0;
     }
 
     #mobControl {
         display: flex;
         flex-direction: column;
-        grid-column: 2/12;
-        grid-row: 5/5;
     
+        max-width: 650px;
         width: 100%;
-        margin: 2.5rem auto;
+        margin: 1.438rem auto 2.5rem;
     
         text-align: center;
         font-size: 0.875rem;
@@ -109,7 +122,7 @@
     #mobControl > div:not(div:last-child){
         display: flex;
         justify-content: space-evenly;
-        margin-bottom: 2.5rem;
+        margin-bottom: 2.188rem;
     }
 
     #mobControl div:first-child a {
