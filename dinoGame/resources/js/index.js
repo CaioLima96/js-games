@@ -1,6 +1,7 @@
 const dino = document.getElementById('dino')
 const cactus = document.getElementById('cactus')
 let finalScore = 0
+let starImg = document.querySelectorAll('.pixelStarImg')
 
 
 let isAlive = setInterval(function(){
@@ -17,6 +18,7 @@ let isAlive = setInterval(function(){
         //alert("GameOver")
         document.getElementById('score').innerHTML = `<p>Pontuação: ${finalScore = 0}</p>`
         
+        starImg.forEach(ScoreReset)
         console.log("gameover")
     }
 
@@ -27,7 +29,7 @@ document.addEventListener("keydown", (event) => {
     dinoScore()
 })
 
-function dinoJump() {
+function dinoJumpMobile() {
     jump()
     dinoScore() 
 }

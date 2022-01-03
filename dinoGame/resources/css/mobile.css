@@ -80,15 +80,15 @@
         text-align: center;
     }
 
-    #pixelStar ul li img {
+    .pixelStarImg {
         filter: grayscale(100%);
         opacity: 0.2;
     }
 
-    #pixelStar ul li:hover img {
+    /* #pixelStar ul li:hover img {
         filter: none;
         opacity: 1;
-    }
+    } */
 
     #score {
         display: flex;
