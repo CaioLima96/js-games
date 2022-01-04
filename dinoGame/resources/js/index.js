@@ -15,14 +15,19 @@ let isAlive = setInterval(function(){
     //dectar colisão
     if(cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 150){
 
-        //alert("GameOver")
+        cactus.classList.remove("moveLeft")
+
         document.getElementById('score').innerHTML = `<p>Pontuação: ${finalScore = 0}</p>`
-        
-        starImg.forEach(ScoreReset)
+
+        starImg.forEach(scoreReset)
+
+        reset()
+
         console.log("gameover")
     }
 
 }, 10)
+
 
 document.addEventListener("keydown", (event) => {
     jump()

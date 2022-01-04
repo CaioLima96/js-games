@@ -12,7 +12,7 @@
 
     /* ====== GRID CSS ====== */
 
-    .game, #pixelStar, #score {
+    .game, #pixelStar, #score, #startBtn, #resetBtn {
         grid-column: 2/12;
         grid-row: 2/2;
     }
@@ -26,7 +26,7 @@
 
     /* ====== CONTENT ====== */
 
-    .game, #pixelStar {
+    .game, #pixelStar, #startBtn, #resetBtn {
         width: 100%;
     }
 

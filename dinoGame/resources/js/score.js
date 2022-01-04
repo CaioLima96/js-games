@@ -36,7 +36,7 @@ function dinoScore(){
     }
 }
 
-function ScoreReset(item){
+function scoreReset(item){
     item.style.opacity = 0.5
     item.style.filter = "grayscale(100%)"
 }

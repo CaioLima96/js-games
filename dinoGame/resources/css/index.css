@@ -97,6 +97,24 @@ h1{
     margin-top: 1.25rem;
 }
 
+#startBtn, #resetBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-column: 4/10;
+    grid-row: 3/3;
+
+    max-width: 650px;
+    width: 90%;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+}
+
+#resetBtn{
+    display: none;
+    flex-direction: column;
+}
 
 #manual {
     grid-column: 4/10;

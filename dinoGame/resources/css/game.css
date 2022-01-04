@@ -43,6 +43,8 @@
     }
 }
 
+
+
 #cactus{
     width: 20px;
     height: 40px;
@@ -53,10 +55,14 @@
     background-image: url(../../assets/img/cactus2.png);
     background-size: 20px 40px;
 
-    animation: block 1s infinite linear;
+    
 }
 
-@keyframes block{
+.moveLeft{
+    animation: moveLeft 1s infinite linear;
+}
+
+@keyframes moveLeft{
     0%{
         left: 580px
     }
