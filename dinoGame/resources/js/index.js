@@ -19,7 +19,7 @@ let isAlive = setInterval(function(){
 
         reset()
 
-        console.log("gameover")
+        // console.log("gameover")
     }
 
 }, 10)

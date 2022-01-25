@@ -1,7 +1,7 @@
 function dinoScore(){
 
     document.getElementById('score').innerHTML = `<p>Pontuação: ${finalScore += 1}</p>`
-    console.log(finalScore)
+    // console.log(finalScore)
 
     switch(finalScore){
         case 10:
