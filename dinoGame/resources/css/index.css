@@ -140,7 +140,9 @@ h1{
     text-align: center;
 }
 
-
+#jumpBtn {
+    pointer-events: none;
+}
 
 
 

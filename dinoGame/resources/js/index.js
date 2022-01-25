@@ -17,10 +17,6 @@ let isAlive = setInterval(function(){
 
         cactus.classList.remove("moveLeft")
 
-        document.getElementById('score').innerHTML = `<p>Pontuação: ${finalScore = 0}</p>`
-
-        starImg.forEach(scoreReset)
-
         reset()
 
         console.log("gameover")
