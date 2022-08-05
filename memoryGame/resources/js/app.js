@@ -1,5 +1,6 @@
 //Grab a couple of things
-const section = document.querySelector('section')
+// const section = document.querySelector('section')
+const section = document.querySelector('ul')
 const playerLivesCount = document.querySelector('span')
 let playerLives = 6
 
@@ -11,23 +12,25 @@ playerLivesCount.textContent = playerLives
 //Generate the data
 const getData = () => [
 
-    {img: './assets/img/beatles.jpeg', name: 'beatles'},
-    {img: './assets/img/blink182.jpeg', name: 'blink182'},
-    {img: './assets/img/fkatwigs.jpeg', name: 'fka twigs'},
-    {img: './assets/img/fleetwood.jpeg', name: 'fleetwood'},
-    {img: './assets/img/joy-division.jpeg', name: 'joy division'},
-    {img: './assets/img/ledzep.jpeg', name: 'led zeppelin'},
-    {img: './assets/img/metallica.jpeg', name: 'metallica'},
-    {img: './assets/img/pinkfloyd.jpeg', name: 'pink floyd'},
+    // {img: './assets/img/beatles.jpeg', name: 'beatles'},
+    // {img: './assets/img/blink182.jpeg', name: 'blink182'},
+    // {img: './assets/img/fkatwigs.jpeg', name: 'fka twigs'},
+    // {img: './assets/img/fleetwood.jpeg', name: 'fleetwood'},
+    // {img: './assets/img/joy-division.jpeg', name: 'joy division'},
+    // {img: './assets/img/ledzep.jpeg', name: 'led zeppelin'},
+    // {img: './assets/img/metallica.jpeg', name: 'metallica'},
+    // {img: './assets/img/pinkfloyd.jpeg', name: 'pink floyd'},
 
-    {img: './assets/img/beatles.jpeg', name: 'beatles'},
-    {img: './assets/img/blink182.jpeg', name: 'blink182'},
-    {img: './assets/img/fkatwigs.jpeg', name: 'fka twigs'},
-    {img: './assets/img/fleetwood.jpeg', name: 'fleetwood'},
-    {img: './assets/img/joy-division.jpeg', name: 'joy division'},
-    {img: './assets/img/ledzep.jpeg', name: 'led zeppelin'},
-    {img: './assets/img/metallica.jpeg', name: 'metallica'},
-    {img: './assets/img/pinkfloyd.jpeg', name: 'pink floyd'},
+    // {img: './assets/img/beatles.jpeg', name: 'beatles'},
+    // {img: './assets/img/blink182.jpeg', name: 'blink182'},
+    // {img: './assets/img/fkatwigs.jpeg', name: 'fka twigs'},
+    // {img: './assets/img/fleetwood.jpeg', name: 'fleetwood'},
+    // {img: './assets/img/joy-division.jpeg', name: 'joy division'},
+    // {img: './assets/img/ledzep.jpeg', name: 'led zeppelin'},
+    // {img: './assets/img/metallica.jpeg', name: 'metallica'},
+    // {img: './assets/img/pinkfloyd.jpeg', name: 'pink floyd'},
+
+    ...pokemonArr, ...pokemonArr,
 ]
 
 
