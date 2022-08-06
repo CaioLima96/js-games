@@ -72,11 +72,12 @@ header nav ul li:hover a {
     list-style: none;
 }
 
-#gameCard {
+.gameCard {
     width: 199px;
     border: 1px solid;
     text-align: center;
     border-radius: 0.313rem;
+    margin: 1%
 }
 
 .gameImg{
@@ -131,4 +132,13 @@ footer {
 footer p {
     font-family: 'Roboto', sans-serif;
     font-size: 0.875rem;
+}
+
+
+
+@media (max-width: 414px) {
+
+    .gameCard {
+        margin-bottom: 1rem;
+    }
 }
