@@ -9,6 +9,10 @@
 }
 
 body {
+    /* background-image: url(../../assets/img/pokemon/pkBg5.png);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: auto; */
     background-color: rgba(192, 192, 192, 0.402);
 }
 
@@ -31,6 +35,14 @@ body {
     margin: 30px auto;
     padding: 1rem;
     border: 1px solid red;
+}
+
+h1 {
+    margin-bottom: 0.625rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
 }
 
 section, ul {
