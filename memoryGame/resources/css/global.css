@@ -8,12 +8,33 @@
     font-family: 'Roboto', sans-serif;
 }
 
+:root {
+    --green1: #80AF72;
+    --gray1: rgba(192, 192, 192, 0.402);
+    --blue1: #3560AD;
+    --yellow1: #FFCC01;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
 body {
-    /* background-image: url(../../assets/img/pokemon/pkBg5.png);
-    background-repeat: repeat;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 30px 1fr 30px;
+    /* gap: 5px; */
+    
+    background-image: url(../../assets/img/pokemon/pkBg6.png);
+    background-repeat: repeat-x;
     background-position: center;
-    background-size: auto; */
-    background-color: rgba(192, 192, 192, 0.402);
+    background-size: auto;
+    background-color: var(--green1);
+}
+
+header, #memoryContent, footer {
+    grid-column: 1/13;
 }
 
 @font-face {
@@ -22,7 +43,29 @@ body {
 }
 
 
-/* ============================================= */
+
+/* ======================= HEADER ======================= */
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+header nav {
+    margin-left: 0.75rem;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a:hover {
+    font-style: italic;
+}
+
+
+
+/* ======================= CONTENT ======================= */
 
 #memoryContent {
     display: flex;
@@ -32,63 +75,58 @@ body {
 
     max-width: 960px;
     width: 90%;
-    margin: 30px auto;
-    padding: 1rem;
+    margin: 0px auto;
+    padding: 0 1rem 1.875rem;
     border: 1px solid red;
+}
+
+#memoryContent > div:last-child {
+    position: relative;
 }
 
 h1 {
     margin-bottom: 0.625rem;
 }
 
-h2 {
+#memoryContent > div:nth-child(2) {
+    display: flex;
+    align-items: center;
     margin-bottom: 1rem;
 }
 
-section, ul {
-    display: grid;
-    grid-template-columns: repeat(4,8rem);
-    grid-template-rows: repeat(4,8rem);
-    grid-gap: 2rem;
-    perspective: 800px;
+#memoryContent > div:nth-child(2) p {
+    margin-left: 0.625rem;
 }
 
-.card {
-    position: relative;
-    transform-style: preserve-3d;
-    transition: all 2s cubic-bezier(0.175, 0.885,0.32,1.265);
-    box-shadow: rgba(0,0,0,0.2) 0px 5px 15px;
-    /* transform: rotateY(180deg); */
+.break {
+    flex-basis: 100%;
+    height: 0;
 }
 
-.face, .back {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    pointer-events: none;
+.break-column {
+    flex-basis: 100%;
+    width: 0;
 }
 
-.back {
-    background-image: url(../../assets/img/pokemon/pkBg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 
-    background-color: white;
-    -webkit-backface-visibility: hidden; 
-    backface-visibility: hidden;
+
+/* ======================= FOOTER ======================= */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.face {
-    background-image: url(../../assets/img/pokemon/pkBg2.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    
-    transform: rotateY(-180deg);
-    padding: 0.25rem;
+footer p {
+    font-size: 0.875rem;
 }
 
-.toggleCard {
-    transform: rotateY(180deg);
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover {
+    font-style: italic;
 }

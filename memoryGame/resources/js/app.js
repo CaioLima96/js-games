@@ -105,13 +105,17 @@ const checkCards = (e) => {
             })
             playerLives--
             playerLivesCount.textContent = playerLives
-            if (playerLives === 0) restart("tente outra vez")
+            if (playerLives === 0) {
+                restart("tente outra vez")
+                tryAgain()
+            }
         }
     }
 
     //Check if we won the game
     if(toggleCard.length === 16) {
         restart("vc venceu")
+        youWon()
     }
 }
 
