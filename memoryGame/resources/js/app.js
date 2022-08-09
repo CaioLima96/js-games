@@ -105,7 +105,10 @@ const checkCards = (e) => {
             })
             playerLives--
             playerLivesCount.textContent = playerLives
-            if (playerLives === 0) restart("tente outra vez")
+            if (playerLives === 0) {
+                restart("tente outra vez")
+                tryAgain()
+            }
         }
     }
 
