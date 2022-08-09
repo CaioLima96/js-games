@@ -11,6 +11,8 @@ document.getElementById('start').addEventListener('click', (event) => {
         startBtn.style.display = 'none'
         tryAgainBtn.style.display = 'none'
         youWonBtn.style.display = 'none'
+
+        showCard()
     }
 })
 
@@ -27,6 +29,8 @@ function tryAgain () {
             startBtn.style.display = 'none'
             tryAgainBtn.style.display = 'none'
             youWonBtn.style.display = 'none'
+
+            showCard()
         }
     })
 }
@@ -43,6 +47,8 @@ function youWon () {
             startBtn.style.display = 'none'
             tryAgainBtn.style.display = 'none'
             youWonBtn.style.display = 'none'
+
+            // showCard()
         }
     })
 }

@@ -12,24 +12,6 @@ playerLivesCount.textContent = playerLives
 //Generate the data
 const getData = () => [
 
-    // {img: './assets/img/beatles.jpeg', name: 'beatles'},
-    // {img: './assets/img/blink182.jpeg', name: 'blink182'},
-    // {img: './assets/img/fkatwigs.jpeg', name: 'fka twigs'},
-    // {img: './assets/img/fleetwood.jpeg', name: 'fleetwood'},
-    // {img: './assets/img/joy-division.jpeg', name: 'joy division'},
-    // {img: './assets/img/ledzep.jpeg', name: 'led zeppelin'},
-    // {img: './assets/img/metallica.jpeg', name: 'metallica'},
-    // {img: './assets/img/pinkfloyd.jpeg', name: 'pink floyd'},
-
-    // {img: './assets/img/beatles.jpeg', name: 'beatles'},
-    // {img: './assets/img/blink182.jpeg', name: 'blink182'},
-    // {img: './assets/img/fkatwigs.jpeg', name: 'fka twigs'},
-    // {img: './assets/img/fleetwood.jpeg', name: 'fleetwood'},
-    // {img: './assets/img/joy-division.jpeg', name: 'joy division'},
-    // {img: './assets/img/ledzep.jpeg', name: 'led zeppelin'},
-    // {img: './assets/img/metallica.jpeg', name: 'metallica'},
-    // {img: './assets/img/pinkfloyd.jpeg', name: 'pink floyd'},
-
     ...pokemonArr, ...pokemonArr,
 ]
 
@@ -140,7 +122,18 @@ const restart = (text) => {
     })
     playerLives = 6
     playerLivesCount.textContent = playerLives
-    setTimeout(() => window.alert(text), 100)
+    // setTimeout(() => window.alert(text), 100)
+}
+
+function showCard() {
+
+    const getCard = document.querySelectorAll('.card')
+    
+    getCard.forEach((card) => {
+        card.classList.add('toggleCard')
+        setTimeout(() => card.classList.remove('toggleCard'), 2000)
+    })
+    console.log(getCard)
 }
 
 cardGenerator()
