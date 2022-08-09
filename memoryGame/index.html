@@ -25,7 +25,25 @@
         <div id="memoryContent">
 
             <h1>Memory Game!</h1>
-            <h2>Lives: <span class="playerLivesCount"></span></h2>
+            
+            <div>
+
+                <div class="inputField">
+
+                    <label for="difficultySelector">Difficulty: </label>
+                
+                    <select name="difficultySelector" id="difficultySelector">
+                        <!-- <option selected value="" disabled>Difficulty</option> -->
+                        <option value="easy">Easy</option>
+                        <option selected value="normal">Normal</option>
+                        <option value="hard">Hard</option>
+                    </select>
+
+                </div>
+
+                <p>Lives: <span class="playerLivesCount"></span></p>
+
+            </div>
 
             <div>
 
@@ -36,9 +54,20 @@
 
 
                 <div id="tryAgain">
-                    
+
+                    <img src='./assets/img/pokemon/pkGameOver.png' alt='You Won'>
+                    <!-- <p>Game Over...</p> -->
                     <img src="./assets/img/pokemon/faintedPikachu.png" alt="Fainted Pikachu">
                     <button value='tryAgain'>Try Again</button>
+
+                </div>
+
+                <div id="youWon">
+
+                    <img src='./assets/img/pokemon/pkYouWon.png' alt='You Won'>
+                    <!-- <p>You Won!</p> -->
+                    <img src="./assets/img/pokemon/pikachuEating.gif" alt="Pikachu eating cookie">
+                    <button value='Start'>Start</button>
 
                 </div>
 
@@ -48,11 +77,15 @@
             <!-- <section></section> -->
         </div>
         
-        <footer></footer>
+        <footer>
+
+            <p>Criado por: <a href="https://www.linkedin.com/in/caiovieiralima/" target="_blank">Caio Vieira Lima</a></p>
+
+        </footer>
 
         <script src="./resources/js/themes.js"></script>
         <script src="./resources/js/app.js"></script>
-        <script src="./resources/js/startTryAgain.js"></script>
+        <script src="./resources/js/buttons.js"></script>
     </body>
 
 </html>

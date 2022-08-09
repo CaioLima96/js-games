@@ -115,6 +115,7 @@ const checkCards = (e) => {
     //Check if we won the game
     if(toggleCard.length === 16) {
         restart("vc venceu")
+        youWon()
     }
 }
 
